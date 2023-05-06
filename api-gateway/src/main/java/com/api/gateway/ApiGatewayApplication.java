@@ -40,18 +40,5 @@ public class ApiGatewayApplication {
         return demoService.sayHello2(name);
     }
 
-    /*
-     *     编程式
-     *     @Bean
-     *     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
-     *         return builder.routes()
-     *                 .route("tobaidu", r -> r.path("/baidu")
-     *                         .uri("https://www.baidu.com"))
-     *                 .route("toapiicu", r -> r.path("/apiicu")
-     *                         .uri("http://api.icu"))
-     *                 .build();
-     *     }
-     */
-
 
 }

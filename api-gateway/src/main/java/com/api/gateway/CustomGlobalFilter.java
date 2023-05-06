@@ -125,9 +125,6 @@ public class CustomGlobalFilter implements GlobalFilter, Ordered {
             return handleNoAuth(response);
         }
 
-        // todo 是否还有调用次数
-        // 请求转发，调用模拟接口 + 响应日志
-        // return chain.filter(exchange);
         return handleResponse(exchange, chain, interfaceInfo.getId(), invokeUser.getId());
     }
 
